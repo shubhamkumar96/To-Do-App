@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 <title> To-Do's</title>
 </head>
 <body>
@@ -21,5 +22,8 @@
 		Enter Your Todo : <input type="text" name="todo"/> 
 		<input type="submit" value="Add"/>
 	</form>
+	
+	<script src="webjars/jquery/3.6.0/jquery.min.js"></script>
+	<script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
