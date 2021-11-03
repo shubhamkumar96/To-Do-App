@@ -17,5 +17,9 @@
 		</c:forEach>
 		
 	</ol>
+	<form action="/todo.do" method="post">
+		Enter Your Todo : <input type="text" name="todo"/> 
+		<input type="submit" value="Add"/>
+	</form>
 </body>
 </html>

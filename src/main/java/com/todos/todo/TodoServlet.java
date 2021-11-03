@@ -18,5 +18,13 @@ private TodoService todoService = new TodoService();
 		req.setAttribute("todos", todoService.retrieveTodos());
 		req.getRequestDispatcher("/WEB-INF/views/todo.jsp").forward(req, resp);
 	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String newTodo = req.getParameter("todo");
+		todoService.addTodo(new Todo(newTodo));
+		
+		resp.sendRedirect("/todo.do");
+	}
 
 }
