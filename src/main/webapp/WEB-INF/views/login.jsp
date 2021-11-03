@@ -7,6 +7,12 @@
 <title>Yahoo!! from JSP</title>
 </head>
 <body>
-	<h1>My First JSP</h1>
+	<h1>${errorMessage}</h1>
+	<h2>Please Enter Your Credentials Below </h2>
+	<form action="/login.do" method="post">
+		Enter Your Name : <input type="text" name="name"/>
+		Enter Your Password : <input type="password" name="password"/> 
+		<input type="submit"/>
+	</form>
 </body>
 </html>

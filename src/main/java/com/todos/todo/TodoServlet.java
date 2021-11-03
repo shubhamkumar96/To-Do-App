@@ -1,21 +1,22 @@
-package com.todo;
+package com.todos.todo;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/login.do")
-public class LoginServlet extends HttpServlet {
 
+@WebServlet("/todo.do")
+public class TodoServlet extends HttpServlet {
+
+private TodoService todoService = new TodoService();
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, resp);
+		req.setAttribute("todos", todoService.retrieveTodos());
+		req.getRequestDispatcher("/WEB-INF/views/todo.jsp").forward(req, resp);
 	}
-	
 
 }
