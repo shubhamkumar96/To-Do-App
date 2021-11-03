@@ -9,7 +9,7 @@ public class TodoService {
 	static {
 		todos.add(new Todo("Learn Servlets and JSP"));
 		todos.add(new Todo("Learn Spring"));
-		todos.add(new Todo("Learn Spring Rest & MVC"));
+		todos.add(new Todo("Learn Spring Rest and MVC"));
 		todos.add(new Todo("Learn Spring Boot"));
 	}
 	
@@ -19,5 +19,9 @@ public class TodoService {
 	
 	public void addTodo(Todo todo) {
 		todos.add(todo);
+	}
+	
+	public void deleteTodo(Todo todo) {
+		todos.remove(todo);
 	}
 }
