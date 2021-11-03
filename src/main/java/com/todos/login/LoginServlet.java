@@ -30,6 +30,7 @@ public class LoginServlet extends HttpServlet {
 		boolean isUserValid = userValidationService.isUserValid(name, password);
 		
 		if(isUserValid) {
+			req.getSession().setAttribute("name", name);
 			resp.sendRedirect("/todo.do");
 		} else {
 			req.setAttribute("errorMessage", "Invalid Credentials!");
