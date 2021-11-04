@@ -22,7 +22,7 @@
 			<a href="/" class="navbar-brand">Brand</a>
 			<ul class="nav navbar-nav">
 				<li class="active"> <a href="#"> HOME </a> </li>
-				<li> <a href="/todo.do"> Todos </a> </li>
+				<li> <a href="/list-todo.do"> Todos </a> </li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li> <a href="/login.do"> LOGIN </a> </li>
