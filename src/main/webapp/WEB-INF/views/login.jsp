@@ -25,14 +25,14 @@
 				<li> <a href="/list-todo.do"> Todos </a> </li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li> <a href="/login.do"> LOGIN </a> </li>
+				<li> <a href="/login"> LOGIN </a> </li>
 			</ul>
 		</nav>
 		
 		<div class ="container">
 			<h1>${errorMessage}</h1>
 			<h2>Please Enter Your Credentials Below </h2>
-			<form action="/login.do" method="post">
+			<form action="/login" method="post">
 				Enter Your Name : <input type="text" name="name"/>
 				<br>
 				Enter Your Password : <input type="password" name="password"/>

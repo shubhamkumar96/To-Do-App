@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.todos.todo.TodoService;
 
-@WebServlet(urlPatterns = "/login.do")
+@WebServlet(urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
 
 	private UserValidationService userValidationService = new UserValidationService();
